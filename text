@@ -54,7 +54,11 @@
 
 ### 1.2 研究背景と先行研究批判
 
-これまでの社会学・メディア論では、宗教儀礼（ベルクソンの〈宗教的生成〉）や法制度（ルーマンの〈社会の法〉）のように、個別領域内で「存続装置」が機能するメカニズムが論じられてきた。しかし、**異なる装置を横断的に比較し、かつ AI・気候危機を含む現在的条件のもとで再評価**しようとする体系的研究は極めて少ない。情報学ではデジタル・アーカイヴの耐久性（Rosenthal 2020）が議論されているが、信の概念を真正面から扱うわけではない。哲学的にはヴァルター・ベンヤミンの〈歴史哲学テーゼ〉（特に第 6・9 テーゼ）が、過去の被抑圧者を"救済"するという革命的時間意識（*Jetztzeit*／"いま-ここ"の裂け目）を提出した。ただしベンヤミンの視座は、**メシア的断裂に賭ける"開いた瞬間"の倫理**にとどまり、具体的に〈どのような制度・メディア装置がその救済を担保しうるか〉という設計論へは踏み込まなかった--①救済主体の不在（誰が実装者となるのか）、②記憶の物質的キャリアへの無関心（アーカイヴ論への橋渡し欠如）、③長期的維持コストの計算不在--という三点でギャップが残る。本稿は、この"ベンヤミン的空白"を補填すべく、メシア的時間論を**制度設計・保存技術・ガバナンスモデル**へ翻訳し、救済／継承を可能にする具体的インフラを探ることを目標の一つとする。
+これまでの社会学・メディア論では、宗教儀礼（ベルクソンの〈宗教的生成〉）や法制度（ルーマンの〈社会の法〉）のように、個別領域内で「存続装置」が機能するメカニズムが論じられてきた。しかし、**異なる装置を横断的に比較し、かつ AI・気候危機を含む現在的条件のもとで再評価**しようとする研究は、特に「保存対象を〈信〉として操作的に定義する」という点で限定的である。情報学ではデジタル・アーカイヴの耐久性（Rosenthal 2020）が議論されているが、信の概念を真正面から扱うわけではない。哲学的にはヴァルター・ベンヤミンの〈歴史哲学テーゼ〉（特に第 6・9 テーゼ）が、過去の被抑圧者を"救済"するという革命的時間意識（*Jetztzeit*／"いま-ここ"の裂け目）を提出した。ただしベンヤミンの視座は、**メシア的断裂に賭ける"開いた瞬間"の倫理**にとどまり、具体的に〈どのような制度・メディア装置がその救済を担保しうるか〉という設計論へは踏み込まなかった--①救済主体の不在（誰が実装者となるのか）、②記憶の物質的キャリアへの無関心（アーカイヴ論への橋渡し欠如）、③長期的維持コストの計算不在--という三点でギャップが残る。本稿は、この"ベンヤミン的空白"を補填すべく、メシア的時間論を**制度設計・保存技術・ガバナンスモデル**へ翻訳し、救済／継承を可能にする具体的インフラを探ることを目標の一つとする。
+
+一方、情報科学・アーカイブ実務の領域には、長期保存を『責任主体・対象共同体・情報パッケージ』の関係として定義する標準枠が存在する。代表例が OAIS（Open Archival Information System）参照モデルであり、保存責任を負う組織（Archive）と、その理解可能性を保証すべき指定コミュニティ（Designated Community）を明示する。さらに OAIS は、情報の受入（SIP: Submission Information Package）／保存（AIP: Archival Information Package）／提供（DIP: Dissemination Information Package）というライフサイクルの語彙を与える。これらは、本稿の四位相モデルにおける trust（制度的信頼）を、単なる心理ではなく**実務上の責務と検証可能性**として実装するための足場となる。
+
+本稿はこの標準語彙を前提にしつつ、保存対象をデータや記録に限らず『継承される期待構造としての〈信〉』へ拡張し、時間地平・統治（集中）・可変性の三軸で比較可能な形へ正規化する点に独自性がある。
 
 ### 1.3 目的と問い
 
@@ -353,6 +357,8 @@ foedus aequum（対等条約）と、同盟国がローマの優越性 (maiestas
 ---
 
 #### 2.1.3 保存設計への示唆：四相モデルに基づく実装ガイドライン
+
+本節は、四位相モデルを『保存設計のチェックリスト』へ落とし込むための実装ガイドラインである。デジタル保存の標準枠として OAIS（ISO 14721）を参照し、(i) 指定コミュニティ（Designated Community）、(ii) SIP/AIP/DIP、(iii) fixity（同一性・改竄検出）と provenance（来歴）という語彙を導入する。さらに、信頼できるリポジトリの監査・認証（ISO 16363）を、ブラック化（不可視化・説明責任低下）への制度的対抗手段として位置づける。保存メタデータは PREMIS（Object/Event/Agent/Rights）を最小要件とし、引き渡しパッケージは BagIt（RFC 8493）等で実装する。加えて、単一主体による全コピー支配を避ける複製原理（LOCKSS: Lots Of Copies Keep Stuff Safe）は、本稿の集中度（C）軸と直結する。
 
 
 
@@ -673,7 +679,7 @@ foedus aequum（対等条約）と、同盟国がローマの優越性 (maiestas
 | 権力軸 (P)     | Centralized               | Hierarchical (mild central)  | Networked polycentric     | Distributed autonomous    |
 | 集中度 (C)     | Distributed autonomous     | Networked polycentric        | Hierarchical (mild central) | Centralized              |
 | 可変軸 (V)     | Fixed                     | Versioned                    | Evolutionary              | Fork / Highly Mutable    |
-| エネルギー負荷 (E) | Low (≤0.05 kWh GB⁻¹ yr⁻¹) | Mid (0.05-0.5 kWh GB⁻¹ yr⁻¹) | High (≥0.5 kWh GB⁻¹ yr⁻¹) | -                         |
+| エネルギー負荷 (E) | Low（相対）                 | Mid（相対）                   | High（相対）                | -                         |
 
 T: 想定存続スパンの4段階分類。1=エフェメラル(\<1世代)、2=ミドル(1-3世代)、3=ロング(3-10世代)、4=ディープ(\>10世代)。
 
@@ -683,7 +689,9 @@ C: 権力集中度の4段階。1=自律分散、2=多中心ネットワーク、
 
 V: 可変性レベルの4段階。1=固定、2=版管理、3=進化的更新、4=フォーク／高可変。
 
-E: エネルギー負荷の3段階。1=Low (1)(≤0.05 kWh GB⁻¹ yr⁻¹)、2=Mid (2)(0.05-0.5)、3=High (3)(≥0.5)。
+E: エネルギー負荷の3段階（相対尺度）。1=Low (1), 2=Mid (2), 3=High (3)。具体値（kWh/GB・year）は推計条件（媒体・冗長度・アクセス頻度・冷却・地域電源など）に強く依存するため、本稿では断定的閾値ではなく相対指標として扱う。
+
+> **注（例示）**：初期推計レンジとして Low: ≤0.05、Mid: 0.05–0.5、High: ≥0.5（kWh GB⁻¹ yr⁻¹）を「一例」として用いるが、これは普遍的な境界ではない。
 
 ### 4.2 座標リスト（25 類型）
 
@@ -913,21 +921,21 @@ E: エネルギー負荷の3段階。1=Low (1)(≤0.05 kWh GB⁻¹ yr⁻¹)、2=
 | C2 Ritual-Live          | 2             | 4             | 0       | ☆   | 担い手次第、ブラック化より断絶リスク |
 
 
-このスコアは次節 5.2 で扱うブラック・ガバナンスのメカニズム図に接続され、**ブラック化の"熱点"を定量的に可視化**する橋渡しとなる。
+このスコアは次節 5.2 で扱うブラック化のメカニズム図に接続され、**ブラック化の"熱点"を定量的に可視化**する橋渡しとなる。
 
 ---
 
 
-### 5.2 ブラック化（black governance：薄められた全体主義的支配構造）--「薄められた全体主義」をめぐる考察
+### 5.2 ブラック化（black-boxed governance：不可視化された統治）
 
-> **用語使用の注記**：本節では、「薄められた全体主義」および「ブラック・ガバナンス」を比喩的・操作的な概念として用いる。20世紀の全体主義体制との厳密な同質性を主張するものではなく、現代社会における漸進的な支配構造の特徴を記述するための分析的道具である。
+> **用語使用の注記**：本節でいう「ブラック化（black-boxing）」とは、意思決定・責任・異議申し立て経路が不可視化され、外部から検証しにくくなることを指す（全体主義という歴史概念の同質性を主張しない）。本稿の旧表現「薄められた全体主義」は誤読を避けるため本文では採用せず、必要に応じて「不可視化された統治」と言い換える。
 
-本節では、**ブラック・ガバナンス＝薄められた全体主義**の論点を批判的に整理する。目指すのは〈数式で封じ込めない〉まま、その構造・心理・歴史的射程を多層的に読み解くことである。
+本節では、ブラック化（不可視化された統治）がどのように成立し、どの条件で強化されるかを整理する。アルゴリズムと制度の不可視化をめぐる議論（例：Pasquale 2015）の問題意識を、保存装置の統治論へ引き寄せて扱う。目指すのは、〈数式で封じ込めない〉まま、その構造・心理・制度的射程を多層的に読み解き、後続章の「対抗設計」（監査・ログ・異議申し立て）へ接続することである。
 
 #### 5.2.1 古典的全体主義との違い
 
-- **殺戮なき支配** : 強制収容所や粛清が前景化した 20 世紀型全体主義に対し、ブラック・ガバナンスは殺傷をレアケースとしつつ、恫喝・忖度・疲弊によって"自発的な服従"を醸成する。
-- **局所的・可搬的** : 国家規模で成立した全体主義と異なり、ブラック・ガバナンスは企業・家族・個人にまでスケールダウンして複製される（"入れ子構造"）。
+- **殺戮なき支配** : 強制収容所や粛清が前景化した 20 世紀型全体主義に対し、ブラック化は殺傷をレアケースとしつつ、恫喝・忖度・疲弊によって"自発的な服従"を醸成する。
+- **局所的・可搬的** : 国家規模で成立した全体主義と異なり、ブラック化は企業・家族・個人にまでスケールダウンして複製される（"入れ子構造"）。
 - **"脱落してもいい"成員** : 完全包摂ではなく、常に過労死・離脱・ドロップアウトを許容して前進する"搾りかす"モデルである。
 
 #### 5.2.2 構造の三層レンズ
@@ -976,7 +984,7 @@ E: エネルギー負荷の3段階。1=Low (1)(≤0.05 kWh GB⁻¹ yr⁻¹)、2=
 
 #### 5.2.7 結語
 
-ブラック・ガバナンスは〈絶対悪〉というより、資本主義的競争と現実逃避の混淆が産む"常温の全体主義"である。その特徴は、**脱落可能な成員を前提にした可塑的支配、忖度とシニシズムの連鎖、情報遮断によるブラックボックス化**。対抗は"巨悪退治"ではなく、**微細な梁・笑い・退出路の確保**といった〈小さな介入〉の束である。入れ子構造ゆえに、局所的成功が他層へ波及しうる--ここに、ブラック化の必然を裂く希望のスキマが存在する。
+ブラック化は〈絶対悪〉というより、資本主義的競争と現実逃避の混淆が産む"常温の全体主義"である。その特徴は、**脱落可能な成員を前提にした可塑的支配、忖度とシニシズムの連鎖、情報遮断によるブラックボックス化**。対抗は"巨悪退治"ではなく、**微細な梁・笑い・退出路の確保**といった〈小さな介入〉の束である。入れ子構造ゆえに、局所的成功が他層へ波及しうる--ここに、ブラック化の必然を裂く希望のスキマが存在する。
 
 ---
 
@@ -1032,7 +1040,9 @@ R = f(E\_innov, D\_div, M\_mut)
 
 > *「Deep-Cold, Low (1)-Carbon, Long-Span」*
 
-以下では、消費電力を **0.02 kWh/GB·year (Low (1))** まで削減しつつ 50 年以上の耐久を確保する **"Arctic-LTO" コールドレイヤ** の構成を図示する。対象はエネルギー負荷の大きい三クラスタ--C5 Algorithmic-Autonomous、C7 Infrastructural Megastructure、C13 AI/Data--の"ベースライン・コピー"である。
+> **注（事実と提案の分離）**：Svalbard 等の固有名は「地理・運用のアイデア」の参照であり、本稿の提案アーキテクチャそのものの実在や、特定施設との同一性を主張するものではない。
+
+以下では、消費電力を **0.02 kWh/GB·year 程度（推計例／設計目標）** まで抑えつつ 50 年以上の耐久を確保する **"Arctic-LTO" コールドレイヤ** の構成を図示する。対象はエネルギー負荷の大きい三クラスタ--C5 Algorithmic-Autonomous、C7 Infrastructural Megastructure、C13 AI/Data--の"ベースライン・コピー"である。
 
 	+---------------------  Arctic-LTO Vault  ----------------------+
 	|  Location : Svalbard bedrock tunnel  |  Temp : -18 °C         |
@@ -1244,32 +1254,38 @@ AIと気候危機時代の死後性保存には、統合的なアプローチが
 5. Benjamin, W. (1940). "Theses on the Philosophy of History." In *Illuminations*. [『歴史哲学テーゼ』]
 6. Deleuze, G. (1966). *Le Bergsonisme*. Paris: Presses Universitaires de France. [『ベルクソン主義』]
 7. Derrida, J. (1995). *Archive Fever: A Freudian Impression*. University of Chicago Press. [『アーカイブ・フィーバー』]
-8. Luhmann, N. (1973). *Vertrauen: Ein Mechanismus der Reduktion sozialer Komplexität*. Stuttgart: Enke. [『信頼』]
+8. Pasquale, F. (2015). *The Black Box Society: The Secret Algorithms That Control Money and Information*. Harvard University Press.
+9. Luhmann, N. (1973). *Vertrauen: Ein Mechanismus der Reduktion sozialer Komplexität*. Stuttgart: Enke. [『信頼』]
 
 ### 情報科学・デジタル保存
 
-9. Rosenthal, D.S.H. (2020). "Digital Preservation: Arrested Development." *Proceedings of the American Society for Information Science and Technology*, 57(1).
-10. Rothenberg, J. (1999). "Avoiding Technological Quicksand: Finding a Viable Technical Foundation for Digital Preservation." *D-Lib Magazine*, 5(1).
-11. Hedstrom, M. (2002). "Digital Preservation: A Time Bomb for Digital Libraries." *D-Lib Magazine*, 8(4).
-12. CCSDS (2012). *Reference Model for an Open Archival Information System (OAIS)*. ISO 14721:2012.
+10. Rosenthal, D.S.H. (2020). "Digital Preservation: Arrested Development." *Proceedings of the American Society for Information Science and Technology*, 57(1).
+11. Rothenberg, J. (1999). "Avoiding Technological Quicksand: Finding a Viable Technical Foundation for Digital Preservation." *D-Lib Magazine*, 5(1).
+12. Hedstrom, M. (2002). "Digital Preservation: A Time Bomb for Digital Libraries." *D-Lib Magazine*, 8(4).
+13. CCSDS (2012). *Reference Model for an Open Archival Information System (OAIS)*. ISO 14721:2012.
+14. ISO. (2012). *ISO 16363: Audit and Certification of Trustworthy Digital Repositories*.
+15. PREMIS Editorial Committee. (2015). *PREMIS Data Dictionary for Preservation Metadata* (v3.0). Library of Congress.
+16. Kunze, J. et al. (2018). *The BagIt File Packaging Format (RFC 8493)*. IETF.
+17. Reich, V. & Rosenthal, D.S.H. (2001). "LOCKSS: A Permanent Web Publishing and Access System." *D-Lib Magazine*.
+18. National Digital Stewardship Alliance (NDSA). (2019). *Levels of Digital Preservation* (v2.0).
 
 ### ブロックチェーン・DAO
 
-13. Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System."
-14. Buterin, V. (2013). "Ethereum Whitepaper."
-15. Buterin, V. (2014). "DAOs, DACs, DAs and More: An Important Taxonomy."
-16. Ethereum Foundation. (2016). "The DAO Incident." (セキュリティ事件)
+19. Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System."
+20. Buterin, V. (2013). "Ethereum Whitepaper."
+21. Buterin, V. (2014). "DAOs, DACs, DAs and More: An Important Taxonomy."
+22. Ethereum Foundation. (2016). "The DAO Incident." (セキュリティ事件)
 
 ### 記憶研究
 
-17. Assmann, J. (2011). *Cultural Memory and Early Civilization*. Cambridge University Press.
-18. Clark, A. & Chalmers, D. (1998). "The Extended Mind." *Analysis*, 58(1), 7-19.
+23. Assmann, J. (2011). *Cultural Memory and Early Civilization*. Cambridge University Press.
+24. Clark, A. & Chalmers, D. (1998). "The Extended Mind." *Analysis*, 58(1), 7-19.
 
 ### デジタルストレージ技術
 
-19. Goldman, N. et al. (2013). "Towards Practical DNA Data Storage." *Nature Communications*, 4, 2119.
-20. Church, G.M. et al. (2012). "Next-Generation Digital Information Storage in DNA." *Science*, 337(6102), 1628.
-21. Ceze, L. et al. (2018). "Molecular Digital Data Storage Using DNA." *Nature Reviews Genetics*, 19(11), 657-658.
+25. Goldman, N. et al. (2013). "Towards Practical DNA Data Storage." *Nature Communications*, 4, 2119.
+26. Church, G.M. et al. (2012). "Next-Generation Digital Information Storage in DNA." *Science*, 337(6102), 1628.
+27. Ceze, L. et al. (2018). "Molecular Digital Data Storage Using DNA." *Nature Reviews Genetics*, 19(11), 657-658.
 
 ---
 
